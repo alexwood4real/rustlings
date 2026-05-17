@@ -5,6 +5,12 @@ fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     // Use the vector macro.
     // let v = ???;
 
+    // very naive way of adding to a vector
+    let mut v = vec![a[0]];
+    v.push(a[1]);
+    v.push(a[2]);
+    v.push(a[3]);
+
     (a, v)
 }
 
